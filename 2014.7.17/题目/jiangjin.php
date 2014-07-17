@@ -3,7 +3,7 @@
     <input type="submit"  value="send"/>
 </form>
 <?php
-for($_POST as $key => $val) {
+foreach($_POST as $key => $val) {
 $key=trim($val);  //接收提交的数据
 $s1 = 100000*0.1;
 $s2 = $s1+ 100000*0.075;

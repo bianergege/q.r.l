@@ -23,7 +23,7 @@ abstract class Shape {
             echo '<font color="red">'.$message.'必须为非负值的数字，并且不能为空</<br>';
             return false;
         }else{
-            rerurn true;
+            return true;
         }
     }
 }

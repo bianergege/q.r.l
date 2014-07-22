@@ -21,7 +21,7 @@ class Result{
         $result = $this->shape->shapeName.'的周长：'.round($this->shape->perimeter(),2).'<br>';
         //调用形状对象中的面积方法，获得面积值
         $result .= $this->shape->shapeName.'的面积：'.round($this->shape->area(),2).'<br>';
-        result $result;  //返回计算结果字符串
+        return $result;  //返回计算结果字符串
     }
 }
 

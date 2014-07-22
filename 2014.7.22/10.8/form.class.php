@@ -43,7 +43,7 @@ private function getTriangle(){
     $input .= '第一边：<input type="text" name="side1" value="'.$_POST["side1"].'"><br>';
     $input .= '第二边：<input type="text" name="side2" value="'.$_POST["side2"].'"><br>';
     $input .= '第三边：<input type="text" name="side3" value="'.$_POST["side3"].'"><br>';
-    rerurn $input;
+    return $input;
 }
 
 /*私有方法，用于获取圆形的表单输入*/

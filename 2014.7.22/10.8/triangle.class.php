@@ -31,7 +31,7 @@ class Triangle extends Shape {
     function area(){
         $s = ($this->side1+$this->side2+$this->side3)/2;
         //返回三角形的面积
-        return aqrt( $s*($s - $this->side1)*($s - $this->side2)*($s - $this->side3));
+        return sqrt( $s*($s - $this->side1)*($s - $this->side2)*($s - $this->side3));
     }
 
     /*按三角形周长的计算公式，实现抽象类shape中的抽象方法perimeter（）*/

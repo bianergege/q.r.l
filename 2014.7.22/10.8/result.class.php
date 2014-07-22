@@ -24,3 +24,5 @@ class Result{
         result $result;  //返回计算结果字符串
     }
 }
+
+?>

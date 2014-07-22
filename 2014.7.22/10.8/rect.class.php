@@ -30,3 +30,5 @@ class Rect extends Shape{
         return 2($this->width+$this->height);  //访问该方法时，返回矩形的周长
     }
 }
+
+?>

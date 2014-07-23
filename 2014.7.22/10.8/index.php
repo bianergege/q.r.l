@@ -11,7 +11,7 @@
 </center>
 <?php
 //设置错误报告的级别，除了无关紧要的“注意”，其他的所有报告都输出
-error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(E_ALL & E_NOTICE);
 //通过魔术方法__autload()去自动加载所需的类文件，将需要的类包含进来
 function __autoload($className){
     include strtolower($className).".class.php";  //包含类所在的文件

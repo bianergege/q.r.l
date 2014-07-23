@@ -24,4 +24,9 @@ class Result{
         return $result;  //返回计算结果字符串
     }
 }
+<<<<<<< HEAD
 ?>
+=======
+
+?>
+>>>>>>> 78ea993efd2eed5b3e510a23dd295515d5a4fc8b

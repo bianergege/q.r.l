@@ -9,7 +9,7 @@ class Form{
     private $action;
     private $shape;
 
-    /*构造方法，用于对用户的操作动作和表单提交的为哈子进行初始化赋值*/
+    /*构造方法，用于对用户的操作动作和表单提交的位置进行初始化赋值*/
     function __construct($action=""){
         $this->action = $action;  //为表单form中的action属性赋值
         /*用户选择形状的动作，默认为矩形rect */
@@ -27,7 +27,6 @@ class Form{
         $form .= '</form>';
         return $form;  //返回用户需要的输入形状表单界面
     }
-}
 
 /*私有方法，用于获取矩形的表单输入*/
 private function getRect(){
@@ -43,7 +42,7 @@ private function getTriangle(){
     $input .= '第一边：<input type="text" name="side1" value="'.$_POST["side1"].'"><br>';
     $input .= '第二边：<input type="text" name="side2" value="'.$_POST["side2"].'"><br>';
     $input .= '第三边：<input type="text" name="side3" value="'.$_POST["side3"].'"><br>';
-    rerurn $input;
+    return $input;
 }
 
 /*私有方法，用于获取圆形的表单输入*/
@@ -51,6 +50,7 @@ private function getCircle(){
     $input = '<b>请输入 | 圆形  | 的半径：</b><p>';
     $input .= '半径：<input type="text" name="radius" value="'.$_POST["radius"].'"><br>';
     return $input;
+}
 }
 
 ?>

@@ -23,7 +23,11 @@ class Triangle extends Shape {
                 $this->side3 = $_POST["side3"];
             }else{
                 echo '<font color="red">三角形的两边之和要大于第三边</font><br>';
+                exit;
             }
+        }
+        else{
+            exit;
         }
     }
 
@@ -31,7 +35,7 @@ class Triangle extends Shape {
     function area(){
         $s = ($this->side1+$this->side2+$this->side3)/2;
         //返回三角形的面积
-        return aqrt( $s*($s - $this->side1)*($s - $this->side2)*($s - $this->side3));
+        return sqrt( $s*($s - $this->side1)*($s - $this->side2)*($s - $this->side3));
     }
 
     /*按三角形周长的计算公式，实现抽象类shape中的抽象方法perimeter（）*/
@@ -42,10 +46,11 @@ class Triangle extends Shape {
     /*本类内部声明一个私有方法validdateSum(),用于验证三角形的两边之和是否大于第三边*/
     private function validateSum($s1,$s2,$s3){
         //如果三角形任意两边之和大于第三边返回true，否则返回false
-        if( (($s1 +$s2) > $s3) && ($s1 +$s3) > $s2) && ($s2 +$s3) > $s1)) {
+        if( (($s1 +$s2) > $s3) && (($s1 +$s3) > $s2) && (($s2 +$s3) > $s1)) {
             return true;
         }else{
             return false;
         }
     }
 }
+?>
